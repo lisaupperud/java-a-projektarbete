@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="353cf07a-120b-4b14-a071-160b253f84c5" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Player.java" afterDir="false" />
-    </list>
+    <list default="true" id="353cf07a-120b-4b14-a071-160b253f84c5" name="Changes" comment="initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +81,7 @@
       <workItem from="1726724070025" duration="11414000" />
       <workItem from="1726768735811" duration="166000" />
       <workItem from="1726768921043" duration="51000" />
-      <workItem from="1726768980023" duration="1788000" />
+      <workItem from="1726768980023" duration="2087000" />
     </task>
     <task id="LOCAL−00001" summary="commit">
       <option name="closed" value="true" />
@@ -95,7 +90,14 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1726736100405</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1726771057772</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1726771057772</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>

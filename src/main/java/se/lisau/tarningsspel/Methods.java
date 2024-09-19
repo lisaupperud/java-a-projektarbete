@@ -11,7 +11,7 @@ public class Methods {
         // skapar scanner-objekt
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Hi and welcome to the Dice Game!!");
+        System.out.println("Hi and welcome to the Dice Game!");
         System.out.println("This is a two-player game where the player with the highest score wins.");
         System.out.println("Please enter Player 1: ");
         String user1 = sc.nextLine();
