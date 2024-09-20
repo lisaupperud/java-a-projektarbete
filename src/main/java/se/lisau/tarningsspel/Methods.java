@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Methods {
 
     // metod som retunerar spelarna
-    public static String[] menu() {
+    public String[] menu() {
         // skapar scanner-objekt
         Scanner sc = new Scanner(System.in);
 
@@ -22,10 +22,10 @@ public class Methods {
         return new String[]{user1, user2};
     }
     // metod som beräknar summan av kasten
-    public static int calculateSum(int a, int b) {
+    public int calculateSum(int a, int b) {
         return a + b;
     }
-    public static int rollDice(String playerName){
+    public int rollDice(String playerName){
         // skapar objekt av Random och Scanner
         // för att kunna använda metoderna
         Random rand = new Random();
