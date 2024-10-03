@@ -1,7 +1,7 @@
 package se.lisau.tarningsspel;
 
 import java.util.Scanner;
-
+        // spelets logik
 public class Game {
     public void playGame(){         // method for the game
         Scanner sc = new Scanner(System.in);
@@ -11,7 +11,7 @@ public class Game {
         String[] playerName = m.menu();         // get the player names from menu / saves in an array
 
         Player player1 = new Player(playerName[0]);         // creating to objects of Player-class
-        Player player2 = new Player(playerName[1]);         // tillsätter sparade användarnamn till spelare
+        Player player2 = new Player(playerName[1]);         // assigns the objects the names from the menu
 
         System.out.println("Welcome " + playerName[0] + " and " + playerName[1]);
 

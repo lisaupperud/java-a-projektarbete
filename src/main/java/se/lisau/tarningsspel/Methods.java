@@ -2,11 +2,11 @@ package se.lisau.tarningsspel;
 
 import java.util.Random;
 import java.util.Scanner;
-
+        // metoder som behövs för spellogiken
 public class Methods {          // class which contains methods
 
 
-    public String[] menu() {        // method that contains menu and returns player names
+    public String[] menu() {        // method that contains menu
 
         Scanner sc = new Scanner(System.in);            // initialising Scanner object
 
@@ -18,7 +18,7 @@ public class Methods {          // class which contains methods
         System.out.println("Please enter Player 2: ");
         String userName2 = sc.nextLine();
 
-        return new String[]{userName1, userName2};
+        return new String[]{userName1, userName2};          // method returns players names
     }
     public int calculateSum(int a, int b) {         // method to calculate the sum of throws
         return a + b;
@@ -30,8 +30,9 @@ public class Methods {          // class which contains methods
         System.out.println("Press ENTER to roll the dice, " + playerName);          // asking the player to press enter to roll
         scan.nextLine();
 
-        int roll = rand.nextInt(6) + 1;
+        int roll = rand.nextInt(6) + 1;         // random number
         System.out.println(playerName + " threw: " + roll);
         return roll;
     }
+
 }

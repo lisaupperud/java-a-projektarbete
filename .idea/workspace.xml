@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="353cf07a-120b-4b14-a071-160b253f84c5" name="Changes" comment="Moved gameplay into Game-class&#10;Added PlayAgain method">
+    <list default="true" id="353cf07a-120b-4b14-a071-160b253f84c5" name="Changes" comment="Moved gameplay into Game-class&#10;Added PlayAgain method&#10;Changed some of the sout's">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Main.java" afterDir="false" />
@@ -24,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="improvments" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -96,7 +101,7 @@
       <workItem from="1727160038485" duration="114000" />
       <workItem from="1727166195896" duration="4272000" />
       <workItem from="1727327157985" duration="628000" />
-      <workItem from="1727805723664" duration="940000" />
+      <workItem from="1727805723664" duration="6357000" />
     </task>
     <task id="LOCAL−00001" summary="commit">
       <option name="closed" value="true" />
@@ -126,17 +131,36 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1726820159222</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Moved gameplay into Game-class&#10;Added PlayAgain method&#10;Changed some of the sout's">
+      <option name="closed" value="true" />
+      <created>1727806682959</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1727806682959</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="commit test&#10;removed !" />
     <MESSAGE value="Moved gameplay into Game-class&#10;Added PlayAgain method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved gameplay into Game-class&#10;Added PlayAgain method" />
+    <MESSAGE value="Moved gameplay into Game-class&#10;Added PlayAgain method&#10;Changed some of the sout's" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved gameplay into Game-class&#10;Added PlayAgain method&#10;Changed some of the sout's" />
   </component>
 </project>
