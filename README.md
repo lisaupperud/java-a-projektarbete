@@ -1,0 +1,1 @@
+This assignment involves creating a simple dice game in Java where two players compete by rolling a dice twice each. The game calculates each player's total score, and the player with the highest score wins
