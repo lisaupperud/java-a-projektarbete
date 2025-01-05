@@ -1,63 +1,85 @@
 package se.lisau.tarningsspel;
 
-import java.util.Scanner;
-        // spelets logik
-public class Game {
-    public void playGame(){         // method for the game
-        Scanner sc = new Scanner(System.in);
-
-        Methods m = new Methods();          // object of Method-class / to be able to use the methods in the class
-
-        String[] playerName = m.menu();         // get the player names from menu / saves in an array
-
-        Player player1 = new Player(playerName[0]);         // creating to objects of Player-class
-        Player player2 = new Player(playerName[1]);         // assigns the objects the names from the menu
-
-        System.out.println("Welcome " + playerName[0] + " and " + playerName[1]);
+import java.util.Random;
 
 
-        while (true) {          // while-loop for the game
+public class Game { // class which contains game logic
+    private Player player1;
+    private Player player2;
+    private final Random random = new Random();
+    private boolean gameDone = false;       // to break while-loop
 
-            int firstRollPlayer1 = m.rollDice(playerName[0]);           // saves the value of rolls in int / calls for method rollDice
-            int firstRollPlayer2 = m.rollDice(playerName[1]);
-            int secondRollPlayer1 = m.rollDice(playerName[0]);
-            int secondRollPlayer2 = m.rollDice(playerName[1]);
+    public Game() {
+        // to start game
+    }
 
-            int sumPlayer1 = m.calculateSum(firstRollPlayer1, secondRollPlayer1);           // calculate sums of rolls for each player and saves in int
-            int sumPlayer2 = m.calculateSum(firstRollPlayer2, secondRollPlayer2);
+    private void startMessage() {        // contains start message
+        System.out.println("Hi and welcome to the Dice Game!");
+        System.out.println("This is a two-player game where the player with the highest score wins.");
+        System.out.println("Please enter Player 1: ");
+        String userName1 = ScannerUtil.getUserInput();
+        this.player1 = new Player(userName1, 0);    // create player1
+        System.out.println("Please enter Player 2: ");
+        String userName2 = ScannerUtil.getUserInput();
+        this.player2 = new Player(userName2, 0);    // create player2
 
+    }
 
-            if (sumPlayer1 > sumPlayer2) {          // if player1 sum is bigger than player2 sum
-                System.out.println(player1.getUserName() + " won with " + sumPlayer1 + " points!");
-                System.out.println(player2.getUserName() + " lost with " + sumPlayer2 + " points!");
-                PlayAgain();
+    private void rollDice(Player player) {         // method for rolling dice
 
-            } else if (sumPlayer1 < sumPlayer2) {           // else if player2 sum is bigger than player1 sum
-                System.out.println(player2.getUserName() + " won with " + sumPlayer2 + " points!");
-                System.out.println(player1.getUserName() + " lost with " + sumPlayer1 + " points!");
-                PlayAgain();
-            } else {            // if there is a tie
-                System.out.println("It's a tie!");
-                PlayAgain();
-            }
-            break;
+        System.out.println("Press ENTER to roll the dice, " + player);
+        ScannerUtil.getUserInput();
+
+        int roll = random.nextInt(6) + 1;         // random number
+        System.out.println(player + " threw: " + roll);
+        player.addScore(roll);       // update player score
+        System.out.println(player + " score: " + player.getScore());
+    }
+
+    public void playGame() {         // method for the game
+        startMessage();
+
+        System.out.println("Welcome " + player1 + " and " + player2);
+        System.out.println("Let's play!");
+
+        while (!gameDone) {      // while-loop for the game
+
+            rollDice(player1);
+            rollDice(player2);
+            rollDice(player1);
+            rollDice(player2);
+            determineWinner();
+
+        }
+
+    }
+
+    private void determineWinner() {        // determines winner
+        if (player1.getScore() > player2.getScore()) {          // if player1 sum is bigger than player2 sum
+            System.out.println(player1.getUserName() + " won with " + player1.getScore() + " points!");
+            System.out.println(player2.getUserName() + " lost with " + player2.getScore() + " points!");
+            PlayAgain();
+
+        } else if (player2.getScore() > player1.getScore()) {           // else if player2 sum is bigger than player1 sum
+            System.out.println(player2.getUserName() + " won with " + player2.getScore() + " points!");
+            System.out.println(player1.getUserName() + " lost with " + player1.getScore() + " points!");
+            PlayAgain();
+        } else {            // if there is a tie
+            System.out.println("It's a tie!");
+            PlayAgain();
         }
     }
-    public void PlayAgain() {           // method for play again or exit
-        Scanner sc = new Scanner(System.in);
+
+    private void PlayAgain() {           // method for play again or exit
         System.out.println("1. Play again?");
         System.out.println("2. Exit");
-        int choice = sc.nextInt();
-        switch (choice) {           // depending on players answer / play again or exit
-            case 1:         // calls for method playGame
-                playGame();
-                break;
-            case 2:
-                System.out.println("Thank you for playing!");
-                break;
-            default:
-                System.out.println("Invalid choice");
+        int choice = ScannerUtil.getIntInput();
+        switch (choice) {
+            case 1 -> playGame();       // if choice = 1 --> play game again
+            case 2 -> gameDone = true;      // if choice = 2 --> exit program
+            default -> System.out.println("Invalid choice");
 
         }
     }
+
 }
