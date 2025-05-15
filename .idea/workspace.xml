@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="353cf07a-120b-4b14-a071-160b253f84c5" name="Changes" comment="Moved gameplay into Game-class&#10;Added PlayAgain method&#10;Changed some of the sout's">
+    <list default="true" id="353cf07a-120b-4b14-a071-160b253f84c5" name="Changes" comment="Moved gameplay into Game-class&#10;Added PlayAgain method&#10;Changed some of the sout's&#10;Added new comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lisau/tarningsspel/Methods.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lisau/Documents/JavaProjects/Kurs1/java-a-projektarbete&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lisau/Documents/JavaProjects/Kurs7/tdd_exercises&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -77,8 +75,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
       </set>
     </attachedChunks>
   </component>
@@ -101,7 +99,14 @@
       <workItem from="1727160038485" duration="114000" />
       <workItem from="1727166195896" duration="4272000" />
       <workItem from="1727327157985" duration="628000" />
-      <workItem from="1727805723664" duration="6357000" />
+      <workItem from="1727805723664" duration="6917000" />
+      <workItem from="1728038508933" duration="1009000" />
+      <workItem from="1728594039482" duration="13000" />
+      <workItem from="1728885677999" duration="16000" />
+      <workItem from="1736105623156" duration="5376000" />
+      <workItem from="1745417310550" duration="7309000" />
+      <workItem from="1747224028663" duration="26000" />
+      <workItem from="1747294159944" duration="5000" />
     </task>
     <task id="LOCAL−00001" summary="commit">
       <option name="closed" value="true" />
@@ -138,7 +143,21 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1727806682959</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Moved gameplay into Game-class&#10;Added PlayAgain method&#10;Changed some of the sout's&#10;Added new comments">
+      <option name="closed" value="true" />
+      <created>1727941083847</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1727941083847</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Moved gameplay into Game-class&#10;Added PlayAgain method&#10;Changed some of the sout's&#10;Added new comments">
+      <option name="closed" value="true" />
+      <created>1736110524668</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1736110524668</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +180,7 @@
     <MESSAGE value="commit test&#10;removed !" />
     <MESSAGE value="Moved gameplay into Game-class&#10;Added PlayAgain method" />
     <MESSAGE value="Moved gameplay into Game-class&#10;Added PlayAgain method&#10;Changed some of the sout's" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved gameplay into Game-class&#10;Added PlayAgain method&#10;Changed some of the sout's" />
+    <MESSAGE value="Moved gameplay into Game-class&#10;Added PlayAgain method&#10;Changed some of the sout's&#10;Added new comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved gameplay into Game-class&#10;Added PlayAgain method&#10;Changed some of the sout's&#10;Added new comments" />
   </component>
 </project>

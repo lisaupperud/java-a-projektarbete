@@ -58,19 +58,19 @@ public class Game { // class which contains game logic
         if (player1.getScore() > player2.getScore()) {          // if player1 sum is bigger than player2 sum
             System.out.println(player1.getUserName() + " won with " + player1.getScore() + " points!");
             System.out.println(player2.getUserName() + " lost with " + player2.getScore() + " points!");
-            PlayAgain();
+            playAgain();
 
         } else if (player2.getScore() > player1.getScore()) {           // else if player2 sum is bigger than player1 sum
             System.out.println(player2.getUserName() + " won with " + player2.getScore() + " points!");
             System.out.println(player1.getUserName() + " lost with " + player1.getScore() + " points!");
-            PlayAgain();
+            playAgain();
         } else {            // if there is a tie
             System.out.println("It's a tie!");
-            PlayAgain();
+            playAgain();
         }
     }
 
-    private void PlayAgain() {           // method for play again or exit
+    private void playAgain() {           // method for play again or exit
         System.out.println("1. Play again?");
         System.out.println("2. Exit");
         int choice = ScannerUtil.getIntInput();
